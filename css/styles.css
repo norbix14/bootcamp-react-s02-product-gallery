@@ -39,9 +39,8 @@ img {
 }
 
 .badge::before {
-  content: "°";
+  content: "\00B7";
   margin: 0 4px;
-  vertical-align: middle;
 }
 
 /* containers */
@@ -73,7 +72,6 @@ img {
 
 .input-search {
   border: none;
-  height: 100%;
   padding: 8px;
   color: #fff;
   background-color: rgba(200,200,200, 0.1);
@@ -81,6 +79,11 @@ img {
 
 .input-search::placeholder {
   color: #fff;
+}
+
+.input-search:focus {
+  border: none;
+  outline: none;
 }
 
 .btn-add {
@@ -112,7 +115,6 @@ img {
 /* card */
 .card {
   width: 350px;
-  height: 400px;
   padding: 10px;
   color: #fff;
   border-radius: 8px;
@@ -126,6 +128,7 @@ img {
 /* header */
 .card-header {
   width: 100%;
+  height: 200px;
   border-radius: 8px;
   margin: 0 auto;
   overflow: hidden;
@@ -165,8 +168,8 @@ img {
   text-transform: capitalize;
 }
 
-@media (max-width:  767px) {}
+@media (max-width: 767px) {}
 
-@media (min-width: 768px) and (max-width:  991px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
 
 @media (min-width: 992px) {}
